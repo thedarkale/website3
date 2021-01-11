@@ -11,8 +11,7 @@ const Layout = ({children, onHideNav, onShowNav, showNav, siteTitle}) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          &copy; {new Date().getFullYear()} 
-          <a href='/'>thedarkale</a>, All rights reserved.
+          &copy; <a href='/'>{new Date().getFullYear()} thedarkale</a>, All rights reserved.
         </div>
       </div>
     </footer>
