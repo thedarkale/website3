@@ -27,9 +27,9 @@ function BlogPost (props) {
       )}
       <Container>
         <div className={styles.grid}>
-          <div className={styles.mainContent}>
+          <div className={styles.mainContent} style={{ textAlign: "justify", textJustify: "initial" }}>
             <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <PortableText style={{ textAlign: "justify", textJustify: "initial" }} blocks={_rawBody} />}
+            {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
           <aside className={styles.metaContent}>
             {publishedAt && (
